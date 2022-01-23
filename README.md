@@ -21,7 +21,8 @@ While I was looking at the HIBP dataset, I realized that many passwords were pre
 **Common tokens**: Using [PwdStat](https://github.com/JakeWnuk/PwdStat), a list of password tokens is generated using the NTLK library. The passwords were passed to a parser that attempted to filter down the passwords to their base tokens and then sorted by most common/popular. This list results from parsing tokens from the filtered down HIBP set. It can be valuable for reducing keyspace in mask attacks by limiting the special characters or PRINCE attacks as a list of tokens to create new password combinations. 
 
 ## Rules
-The repository contains various rules generated from both the unfiltered and filtered HIBP set using unique methods. They are separated into smaller lists to account for different hashing algorithms and sorted by most effective (most cracks) to least effective. *A methodology writeup is comming soon (tm).*
+The repository contains various rules generated from both the unfiltered and filtered HIBP set using unique methods. They are separated into smaller lists to account for different hashing algorithms and sorted by most effective (most cracks) to least effective.
+A methodology writeup can be found [here for Squid Rules](https://jakewnuk.com/posts/cracking-half-billion-passwords-custom-rules-wordlists/) and [here for Leo Rules](https://jakewnuk.com/posts/cracking-half-billion-passwords-analysis/).
 
 **Squid Rules**: This ruleset was created using rounds of randomized hashes, wordlists, and rule order in a high entropy environment to sort Hashcat rules by effectiveness. The set was "trained" on the entire collection of HIBP passwords and only included rules found in public hash cracking rule sets. The set is sorted by most effective to least effective and does not contain any generated rules. 
 
