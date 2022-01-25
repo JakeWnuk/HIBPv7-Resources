@@ -13,7 +13,7 @@ While I was looking at the HIBP dataset, I realized that many passwords were pre
 ## Wordlists
 **HIBP-Top-7M.txt**: this wordlist contains the top 7 million most popular passwords from HIBP in no particular order. From the top 7 million most popular passwords, I cracked 99.65% of them, and this is the resulting list. Offensive practitioners can use this wordlist for hash cracking, and defenders may find this list valuable to deny users from setting passwords contained in this list to improve security.
 
-**HIBP-Top-100M-minreqs.txt**: this wordlist contains the top 100 million most popular passwords from HIBP in no particular order. From the top 100 million most popular passwords, I cracked 99.18% of them, and this is the result after passing them through [PwdStat](https://github.com/JakeWnuk/PwdStat) for minimum complexity requirements. The wordlist contains around 10 million passwords.
+**HIBP-Top-100M-minreqs.txt**: this wordlist contains the top 100 million most popular passwords from HIBP in no particular order. From the top 100 million most popular passwords, I cracked 99.18% of them, and this is the result after passing them through [PwdStat](https://github.com/JakeWnuk/PwdStat) for minimum complexity requirements. The wordlist contains around 8.5 million passwords.
 
 **Top15_masks_passwords.txt**: I created this wordlist from the filtered down HIBP data (~70m passwords) and the top 15 most popular password masks of the set. The wordlist contains around 30 million passwords (>2x the size of RockYou) and would meet the minimum complexity requirements of an AD domain. 
 
