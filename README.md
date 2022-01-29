@@ -1,5 +1,5 @@
 <h1 align="center">
-Password Security Repository
+Hash Cracking Resources
 </h1>
 
 ## What is this?
