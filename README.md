@@ -2,6 +2,33 @@
 Hash Cracking Resources
 </h1>
 
+## TLDR:
+- Wordlists:
+    - HIBP-Top-7m.txt
+        - Top 7M passwords (99.65%) from HIBPv7
+    - HIBP-Top-100M-minreqs.txt
+        - 8.5m passwords from HIBPv7 that would meet min AD complexity requirements
+    - Top15_masks_passwords.txt
+        - 30m passwords from HIBPv7 based on the top 15 masks that would meet min AD complexity requirements
+- Masks and Tokens
+    - common_masks.txt
+        - Hashcat masks from HIBPv7 in order of most popular that would meet min AD complexity requirements
+    - common_masks_w_count.csv
+        - Same as above with additional metadata
+    - common_tokens.txt
+        - Word/Tokens from HIBPv7 in order of most popular from NLP parsing
+    - common_tokens_w_count.csv
+        - Same as above with additional metadata
+- Rules
+    - Squid Rule
+        - Hashcat rules sorted from most effective to least effective from public hashcracking sets
+        - Same rules broken into multiple sizes for specific applications
+    - Leo Rule
+        - Generated Hashcat rules sorted from most effective to least effective from only passwords that meet min AD complexity requirements
+        - Same rules broken into multiple sizes for specific applications
+
+***
+
 ## What is this?
 This repository aims to aggregate several custom hash cracking resources into a single location for reference and help guide using these resources to secure environments.
 
