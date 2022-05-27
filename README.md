@@ -2,32 +2,11 @@
 Hash Cracking Resources
 </h1>
 
-## TLDR:
-- Wordlists:
-    - HIBP-Top-7m.txt
-        - Top 7M passwords (99.65%) from HIBPv7
-    - HIBP-Top-100M-minreqs.txt
-        - 8.5m passwords from HIBPv7 that would meet min AD complexity requirements
-    - Top15_masks_passwords.txt
-        - 30m passwords from HIBPv7 based on the top 15 masks that would meet min AD complexity requirements
-- Masks and Tokens
-    - common_masks.txt
-        - Hashcat masks from HIBPv7 in order of most popular that would meet min AD complexity requirements
-    - common_masks_w_count.csv
-        - Same as above with additional metadata
-    - common_tokens.txt
-        - Word/Tokens from HIBPv7 in order of most popular from NLP parsing
-    - common_tokens_w_count.csv
-        - Same as above with additional metadata
-- Rules
-    - Squid Rule
-        - Hashcat rules sorted from most effective to least effective from public hashcracking sets
-        - Same rules broken into multiple sizes for specific applications
-    - Leo Rule
-        - Generated Hashcat rules sorted from most effective to least effective from only passwords that meet min AD complexity requirements
-        - Same rules broken into multiple sizes for specific applications
-
-***
+### Quick Links:
+ - [Wordlists](#wordlists)
+ - [Masks and Tokens](#masks-and-tokens)
+ - [Rules](#rules)
+ - [Summary](#summary)
 
 ## What is this?
 This repository aims to aggregate several custom hash cracking resources into a single location for reference and help guide using these resources to secure environments.
@@ -56,3 +35,30 @@ A methodology writeup can be found [here for Squid Rules](https://jakewnuk.com/p
 **Squid Rules**: This ruleset was created using rounds of randomized hashes, wordlists, and rule order to sort Hashcat rules by effectiveness. The set was "trained" on the entire collection of HIBP passwords and only included rules found in public hash cracking rule sets. The set is sorted by most effective to least effective and does not contain any generated rules. 
 
 **Leo Rules**: This ruleset was created using rounds of randomized hashes, wordlists, and rule order to sort Hashcat rules by effectiveness. The set was "trained" on the filtered collection of HIBP passwords and only included generated rules (raking) not found in public hash cracking rule sets. The set is sorted by most effective to least effective and contains generated rules. I performed around 3000 rounds of raking to achieve this optimized set. 
+
+***
+
+## Summary:
+- Wordlists:
+    - HIBP-Top-7m.txt
+        - Top 7M passwords (99.65%) from HIBPv7
+    - HIBP-Top-100M-minreqs.txt
+        - 8.5m passwords from HIBPv7 that would meet min AD complexity requirements
+    - Top15_masks_passwords.txt
+        - 30m passwords from HIBPv7 based on the top 15 masks that would meet min AD complexity requirements
+- Masks and Tokens
+    - common_masks.txt
+        - Hashcat masks from HIBPv7 in order of most popular that would meet min AD complexity requirements
+    - common_masks_w_count.csv
+        - Same as above with additional metadata
+    - common_tokens.txt
+        - Word/Tokens from HIBPv7 in order of most popular from NLP parsing
+    - common_tokens_w_count.csv
+        - Same as above with additional metadata
+- Rules
+    - Squid Rule
+        - Hashcat rules sorted from most effective to least effective from public hashcracking sets
+        - Same rules broken into multiple sizes for specific applications
+    - Leo Rule
+        - Generated Hashcat rules sorted from most effective to least effective from only passwords that meet min AD complexity requirements
+        - Same rules broken into multiple sizes for specific applications
